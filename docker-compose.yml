@@ -5,7 +5,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ./data/postgres:/tmp/postgres
+      - ./tmp/postgres
   # redis:
   #   image: redis
   #   ports:
@@ -24,6 +24,6 @@ services:
     environment:
       DATABASE_HOST: postgres
       DATABASE_USER: postgres
-      DATABASE_PASSWORD: postgres
+      DATABASE_PASSWORD: password
       DATABASE_PORT: 5432
       # REDIS_URL: redis://redis:6379
