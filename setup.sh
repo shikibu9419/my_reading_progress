@@ -1,5 +1,13 @@
 #!/bin/sh
-docker-compose build
-docker-compose run app rake db:create
-docker-compose run app rake db:migrate
-docker-compose up
+# Kill all docker containers
+docker kill $(docker ps -q)
+
+# Remove pid
+if [ -f tmp/pids/server.pid ]; then
+  rm tmp/pids/server.pid
+fi
+
+# Setup
+source aliases.sh
+build
+rails db:create db:migrate
