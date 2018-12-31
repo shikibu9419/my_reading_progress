@@ -1,5 +1,5 @@
 create_table "books", force: :cascade do |t|
-  # t.integer "user_id"
+  t.integer "user_id"
   t.string  "title"
   t.string  "author"
   t.text    "impression"
@@ -7,5 +7,5 @@ create_table "books", force: :cascade do |t|
   t.integer "now_page"
 
   t.timestamps
-  # t.index ["user_id"], name: "index_user_id_on_users", unique: true
+  t.index ["user_id"], name: "index_user_id_on_users", unique: true
 end

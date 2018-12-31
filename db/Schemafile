@@ -1,1 +1,2 @@
 require 'schemas/books.schema'
+require 'schemas/users.schema'

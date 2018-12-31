@@ -10,10 +10,12 @@ gem 'ridgepole'
 
 gem 'pg'
 
+gem 'sorcery'
+
 gem 'puma', '~> 3.11'
 
-gem 'slim-rails'
-gem 'sass-rails', '~> 5.0'
+# gem 'slim-rails'
+# gem 'sass-rails', '~> 5.0'
 
 gem 'uglifier', '>= 1.3.0'
 
